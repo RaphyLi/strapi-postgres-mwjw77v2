@@ -4,8 +4,7 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Articles",
-    "description": ""
+    "displayName": "Articles"
   },
   "options": {
     "draftAndPublish": true
@@ -19,12 +18,11 @@
       "type": "string"
     },
     "content": {
-      "type": "richtext"
+      "type": "blocks"
     },
     "image": {
       "type": "media",
       "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
@@ -41,17 +39,17 @@
       "target": "api::author.author",
       "inversedBy": "articles"
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::categorie.categorie",
-      "inversedBy": "articles"
-    },
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag",
       "mappedBy": "article"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie.categorie",
+      "inversedBy": "articles"
     }
   }
 }

@@ -4,8 +4,7 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "Authors",
-    "description": ""
+    "displayName": "Authors"
   },
   "options": {
     "draftAndPublish": true
@@ -19,12 +18,11 @@
       "type": "email"
     },
     "biography": {
-      "type": "richtext"
+      "type": "blocks"
     },
     "avatar": {
       "type": "media",
       "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
